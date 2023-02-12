@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./css/styles.css"">
+  </head>
+  <body>
+    <h1 class="tag">Random Password Generator</h1>
+
+    <div class="form-div">
+      <form method="post" action="/">
+        <input
+          type="text"
+          id="letters"
+          name="letters"
+          placeholder="letters"
+          required
+        />
+        <input
+          type="text"
+          id="numbers"
+          name="numbers"
+          placeholder="numbers"
+          required
+        />
+        <input
+          type="text"
+          id="symbols"
+          name="symbols"
+          placeholder="symbols"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <p>
+      NB:-Please type how many letters,numbers & symbols you want your Password
+    </p>
+
+    <div class="display"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- how to select with attribute in css -->
