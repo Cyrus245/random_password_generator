@@ -80,8 +80,12 @@ $("button").click((e) => {
   const password_to_str = password.toString().split(",").join("");
   const pp = `<h1 class="password">Your Password is: ${password_to_str}</h1>`;
 
-  $(".display").append(pp);
+  if (lett && num && symbol !== "") {
+    $(".display").append(pp);
+    $(".password").prev().hide();
+  } else {
+    alert("Please Type Something !");
+  }
+
   console.log(password_to_str);
 });
-
-//write me a css for backround image from url
