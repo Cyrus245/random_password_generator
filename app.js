@@ -77,6 +77,7 @@ $("button").click((e) => {
   }
 
   const password = [...chosen_letters, ...chosen_num, ...chosen_symbols];
+  const p_shuffle = password.sort(() => 0.5 - Math.random());
   const password_to_str = password.toString().split(",").join("");
   const pp = `<h1 class="password">Your Password is: ${password_to_str}</h1>`;
 
